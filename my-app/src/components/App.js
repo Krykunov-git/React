@@ -4,10 +4,16 @@ import Lists from "./homeworks/hw1/ListsComponent";
 import Video from "./homeworks/hw1/VideoComponent";
 import Greeting from "./homeworks/hw2/ Greeting";
 import ShoppingList from "./homeworks/hw2/ShoppingList";
+import OrderStatus from "./homeworks/hw2/OrderStatus";
 
 
 
 function App(){
+    const orders = [
+  { orderId: 101, status: "в пути" },
+  { orderId: 102, status: "доставлен" },
+  { orderId: 103, status: "ожидает оплаты" },
+];
     const products = ["Bread", "Milk", "Cheese", "Eggs"];
 
     return (
@@ -18,6 +24,7 @@ function App(){
           <Video/>
            <Greeting name="Ivan"/>
               <ShoppingList items={products}/>
+              <OrderStatus orderId={orders[2].orderId} status={orders[2].status} />
           
         
     </div>   
