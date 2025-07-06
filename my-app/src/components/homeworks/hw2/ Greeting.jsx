@@ -1,0 +1,10 @@
+function  Greeting({name,lol}){
+
+   return(
+ <h1>Привет {name}!</h1>
+    
+   
+   ) 
+}
+
+export default Greeting
