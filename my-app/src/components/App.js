@@ -24,7 +24,7 @@ function App(){
           <Video/>
            <Greeting name="Ivan"/>
               <ShoppingList items={products}/>
-              <OrderStatus orderId={orders[2].orderId} status={orders[2].status} />
+              <OrderStatus orderId={orders[0].orderId} status={orders[0].status} />
           
         
     </div>   
