@@ -9,7 +9,7 @@ const ratingList = [
    "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/PNG_transparency_demonstration_1.png/800px-PNG_transparency_demonstration_1.png",
   "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/SVG_logo.svg/1024px-SVG_logo.svg.png"]
 
-    const[rating,ratingValue] = useState(0)
+    const[rating,ratingValue] = useState(1)
 
     return(
         <div>
@@ -27,3 +27,4 @@ const ratingList = [
 }
 
 export default Rating
+
