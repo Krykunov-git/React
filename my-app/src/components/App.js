@@ -6,6 +6,7 @@ import Greeting from "./homeworks/hw2/ Greeting";
 import ShoppingList from "./homeworks/hw2/ShoppingList";
 import OrderStatus from "./homeworks/hw2/OrderStatus";
 import Rating from "./homeworks/hw3/Rating";
+import List from "./homeworks/hw3/ List";
 
 
 
@@ -27,6 +28,7 @@ function App(){
               <ShoppingList items={products}/>
               <OrderStatus orderId={orders[0].orderId} status={orders[0].status} />
                <Rating/>
+                  <List/>
           
         
     </div>   
