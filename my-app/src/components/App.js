@@ -7,6 +7,7 @@ import ShoppingList from "./homeworks/hw2/ShoppingList";
 import OrderStatus from "./homeworks/hw2/OrderStatus";
 import Rating from "./homeworks/hw3/Rating";
 import List from "./homeworks/hw3/ List";
+import Component from "./homeworks/hw5/component";
 
 
 
@@ -29,6 +30,7 @@ function App(){
               <OrderStatus orderId={orders[0].orderId} status={orders[0].status} />
                <Rating/>
                   <List/>
+                   <Component/>
           
         
     </div>   
