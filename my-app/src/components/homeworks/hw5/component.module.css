@@ -40,18 +40,25 @@ p {
 .main_box{
     border: 3px solid rgba(30, 215, 96, 1);
     border-radius: 65px;
+     padding: 36px 57px;
+     display: flex;
+     gap: 18px;
+     margin-top: 31px;
+     margin-bottom: 195px;
 }
 
 
 .main_icon {
   color: rgba(30, 215, 96, 1);
   transition: color 0.3s ease;
-  width: 40px;
-  height: 40px;
+ 
+
 }
 
 .main_icon:hover {
    
   color: rgba(17, 129, 241, 1);
+  transform: translateY(-10px);
+    transition: transform 0.3s ease;
   
 }
