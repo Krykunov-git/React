@@ -1,3 +1,8 @@
+p {
+  margin: 0;
+  padding: 0;
+}
+
 
 .section{
     background-color: black;
@@ -15,3 +20,24 @@
 
 }
 
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main_title{
+    margin-top: 111px;
+    font-weight: 700;
+    font-size: 55px;
+
+}
+.main_paragraf{
+    font-size: 32px;
+    font-weight: 700;
+
+}
+
+.main_box{
+    border: 3px solid rgba(30, 215, 96, 1);
+    border-radius: 65px;
+}
