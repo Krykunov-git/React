@@ -21,10 +21,12 @@ function Component(){
 
                 <div className={styles.main_box}>
                     
-
-                     <AppleIcon className={styles.icon} />
-  <GoogleIcon className={styles.icon} />
-  <TwitterIcon className={styles.icon} />
+                 
+                         <AppleIcon className={styles.main_icon} />
+                    
+                    
+                    <GoogleIcon className={styles.main_icon} />
+                    <TwitterIcon className={styles.main_icon} />
                 </div>
             </div>
             
