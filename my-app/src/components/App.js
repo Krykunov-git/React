@@ -8,6 +8,7 @@ import OrderStatus from "./homeworks/hw2/OrderStatus";
 import Rating from "./homeworks/hw3/Rating";
 import List from "./homeworks/hw3/ List";
 import Component from "./homeworks/hw5/component";
+import User from "./homeworks/hw6/ UserProfile";
 
 
 
@@ -21,6 +22,7 @@ function App(){
 
     return (
     <div >
+      <User/>
       <Image/>
        <Paragraph/>
         <Lists/>
