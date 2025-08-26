@@ -8,10 +8,13 @@ const LanguageButton = () => {
 
   const next = language === "en" ? "ru" : "en"
   return (
-    <button className={language === "ru" ? "ru" : "en"}
-      onClick={() => setlanguage(next)}>
-      {language === "en" ? "Switch to RU" : "Переключить на английский"}
-    </button>
+    <div>
+      <h1>language button</h1>
+      <button className={language === "ru" ? "ru" : "en"}
+        onClick={() => setlanguage(next)}>
+        {language === "en" ? "Switch to RU" : "Переключить на английский"}
+      </button>
+    </div>
 
   )
 
