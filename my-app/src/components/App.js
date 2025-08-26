@@ -9,43 +9,45 @@ import Rating from "./homeworks/hw3/Rating";
 import List from "./homeworks/hw3/ List";
 import Component from "./homeworks/hw5/component";
 import User from "./homeworks/hw6/ UserProfile";
+import LanguageContext from "./homeworks/hw7/LanguageContext";
+import { useState } from "react";
+import LanguageButton from "./homeworks/hw7/LanguageButton";
 
 
 
-function App(){
-    const orders = [
-  { orderId: 101, status: "в пути" },
-  { orderId: 102, status: "доставлен" },
-  { orderId: 103, status: "ожидает оплаты" },
-];
-    const products = ["Bread", "Milk", "Cheese", "Eggs"];
+function App() {
+  const orders = [
+    { orderId: 101, status: "в пути" },
+    { orderId: 102, status: "доставлен" },
+    { orderId: 103, status: "ожидает оплаты" },
+  ];
+  const products = ["Bread", "Milk", "Cheese", "Eggs"];
+  const [language, setlanguage] = useState('en')
 
-    return (
-    <div >
-      <User/>
-      <Image/>
-       <Paragraph/>
-        <Lists/>
-          <Video/>
-           <Greeting name="Ivan"/>
-              <ShoppingList items={products}/>
-              <OrderStatus orderId={orders[0].orderId} status={orders[0].status} />
-               <Rating/>
-                  <List/>
-                   <Component/>
-          
-        
-    </div>   
+
+  return (
+
+    <LanguageContext.Provider value={{ language, setlanguage }}>
+      <div >
+        <LanguageButton />
+        <User />
+        <Image />
+        <Paragraph />
+        <Lists />
+        <Video />
+        <Greeting name="Ivan" />
+        <ShoppingList items={products} />
+        <OrderStatus orderId={orders[0].orderId} status={orders[0].status} />
+        <Rating />
+        <List />
+        <Component />
+      </div>
+    </LanguageContext.Provider>
 
   )
-    
+
 }
 
- 
-
-
-
-   
 
 
 export default App;
